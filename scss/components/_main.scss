@@ -1,0 +1,273 @@
+.main {
+    background-color: white;
+}
+
+.person_introduction_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+    max-height: 856px;
+    align-items: center;
+}
+
+.person_introduction {
+    background-color: $person_section_bg;
+    width: 100%;
+}
+
+.text_introduction {
+    display: flex;
+    flex-direction: column;
+    color: $main_text_color;
+    max-width: 542px;
+    padding-left: 120px;
+
+}
+
+.text_introduction h1 {
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 90px;
+    @include accent_text;
+}
+
+.text_introduction_secondary {
+    @include main_text;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+
+.button_intro {
+    @extend %extend_button;
+    max-width: 356px;
+    @include main_text;
+}
+
+.superstar {
+    margin-top: 100px;
+    background-color: $person_section_bg;
+}
+
+.superstar_container {
+
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.superstar_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    position: absolute;
+    z-index: 4;
+    max-width: 660px;
+    left: 10%;
+    @include main_text;
+}
+
+.superstar_text_title {
+    font-size: 60px;
+    @include accent_text;
+}
+
+.clients_say {
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.clients_say_title_div {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+}
+
+.clients_say_title {
+    font-size: 70px;
+    @include accent_text;
+}
+
+.what_clients_say {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $person_section_bg;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.clients {
+    color: $accent_color;
+}
+
+.what_clients_say_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 40%;
+    padding: 20px 20px;
+    color: $main_text_color;
+    @include main_text;
+
+}
+
+
+
+
+.frank {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+
+}
+
+.crew {
+    font-size: 14px;
+}
+
+.get_in_touch {
+    margin-top: 192px;
+    background-color: $person_section_bg;
+    padding-bottom: 60px;
+}
+
+.get_in_touch_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.text_touch_title {
+    @include accent_text;
+    font-size: 70px;
+    color: $main_text_color;
+    padding-bottom: 240px;
+    padding-top: 60px;
+}
+
+.text_touch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 130px;
+}
+
+.email {
+    color: $accent_color;
+    text-decoration: underline;
+    @include main_text;
+}
+
+.address {
+    font-size: 20px;
+    @include main_text;
+}
+
+
+.forms {
+    margin-top: 60px;
+}
+
+
+
+
+
+
+.button_submit_div {
+    @extend %extend_button;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    @include main_text;
+    border: 1px solid$accent_color
+}
+
+.name_john {
+    @include accent_text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 80px;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.doe {
+    color: $accent_color;
+    @include accent_text;
+}
+
+.copyright {
+    font-size: 14px;
+    color: $light_gray;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    @include main_text;
+}
+
+
+
+
+// 
+.combined_form {
+
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.write_smth_form {
+    min-height: 140px;
+
+    overflow-y: auto;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+.write_smth_form {
+    width: 570px;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    @include main_text;
+
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.write_smth_form:focus {
+    border-color: #007bff;
+    outline: none;
+}
