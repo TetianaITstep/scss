@@ -1,0 +1,24 @@
+name: Deploy to the host
+
+on: 
+    push:
+         branches:
+                - main:
+
+         jobs:
+            deploy:
+                 runs-on: ubuntu-latest
+                 
+               steps:
+               - name: Checkout code
+                  uses: actions/checkout@v2
+
+                  
+                  - name: Upload to FTP
+                    uses: SamKirland/FTP-Deploy_Action@4.1.0
+                    with:
+                    ftp_server: ftpupload.net
+                    ftp_username: if0_36632229
+                    ftp_password: 1ZfUyGI4plR
+                    local-dir: "/"
+                 
